@@ -1,4 +1,4 @@
-#include "audio/Speaker.h"
+#include "Speaker.h"
 #include <cassert>
 
 int main() {

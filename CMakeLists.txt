@@ -13,8 +13,9 @@ add_subdirectory(src/audio)
 add_subdirectory(tests)
 
 # Main executable
-add_executable(RobotWars src/main.cpp)
+add_executable(RobotWars src/main.cpp src/core/Application.cpp)
 
+# Include common and external headers
 target_include_directories(RobotWars PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_include_directories(RobotWars PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/external)
 

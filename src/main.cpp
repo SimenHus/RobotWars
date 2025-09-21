@@ -1,4 +1,4 @@
-#include "audio/Speaker.h"
+#include "Speaker.h"
 #include "core/Application.h"
 
 int main() {

@@ -1,4 +1,6 @@
+#pragma once
 #include "AudioBackend.h"
+#include <iostream>
 
 class Speaker {
 public:
