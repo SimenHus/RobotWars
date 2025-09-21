@@ -1,7 +1,7 @@
-#include <iostream>
-#include "hello.h"
+#include "audio/Speaker.h"
+#include "core/Application.h"
 
 int main() {
-    std::cout << get_hello_message() << std::endl;
-    return 0;
+    Application app;
+    app.run();
 }
