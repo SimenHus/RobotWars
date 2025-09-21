@@ -1,4 +1,3 @@
-#include "Speaker.h"
 #include "core/Application.h"
 
 int main() {

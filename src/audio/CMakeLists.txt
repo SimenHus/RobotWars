@@ -1,6 +1,5 @@
 add_library(audio STATIC
     src/AudioDriver.cpp
-    src/AudioBackend.cpp
     src/Speaker.cpp
 )
 

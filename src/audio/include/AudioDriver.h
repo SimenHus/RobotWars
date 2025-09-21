@@ -3,7 +3,6 @@
 
 class AudioDriver {
 public:
-    void init(int sampleRate, int channels);
-    void writeSamples(const int* data, std::size_t count);
-    bool isReady() const;
+    void playSoundFile(const std::string &filepath);
+    void stop();
 };

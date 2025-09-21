@@ -21,3 +21,6 @@ target_include_directories(RobotWars PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/externa
 
 # Link audio library
 target_link_libraries(RobotWars PRIVATE audio)
+
+# Copy all assets to the build folder
+file(COPY ${CMAKE_SOURCE_DIR}/assets DESTINATION ${CMAKE_BINARY_DIR})
