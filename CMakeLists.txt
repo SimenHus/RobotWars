@@ -10,6 +10,7 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 # Add subdirectories
 add_subdirectory(src/audio)
+add_subdirectory(src/camera)
 add_subdirectory(tests)
 
 # Main executable
@@ -19,8 +20,9 @@ add_executable(RobotWars src/main.cpp src/core/Application.cpp)
 target_include_directories(RobotWars PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_include_directories(RobotWars PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/external)
 
-# Link audio library
+# Link libraries
 target_link_libraries(RobotWars PRIVATE audio)
+target_link_libraries(RobotWars PRIVATE camera)
 
 # Copy all assets to the build folder
 file(COPY ${CMAKE_SOURCE_DIR}/assets DESTINATION ${CMAKE_BINARY_DIR})
