@@ -5,13 +5,13 @@ class Motor {
 public:
     void stop();
     void start();
-    void setSpeed(const int spd);
+    void setSpeed(float spd);
     void setDirectionForward();
     void setDirectionReverse();
 
 private:
-    MotorDriver driver;
-    int speed;
+    MotorDriver *driver;
+    float speedPercent; // Speed in percentage between 0-100 %
     bool isForwardDirection;
     bool isRunning;
 
